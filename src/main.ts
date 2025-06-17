@@ -6,7 +6,7 @@ async function bootstrap() {
 
   // Enable CORS
   app.enableCors({
-    origin: 'https://https://cloudnest-pratikthaiba.netlify.app/',
+    origin: 'https://cloudnest-pratikthaiba.netlify.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
