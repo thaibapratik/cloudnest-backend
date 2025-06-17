@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - DATABASE_URL=postgresql://postgresql:0726@ep-flat-wind-a4qkfbv3-pooler.us-east-1.aws.neon.tech/cloud-nest?schema=public
+    volumes:
+      - .:/app
+    command: npm run start:dev
